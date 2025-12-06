@@ -1,0 +1,38 @@
+{
+  "services": {
+    "authService": {
+      "baseUrl": "https://api.example.com/auth",
+      "endpoints": {
+        "login": "/login",
+        "logout": "/logout",
+        "refreshToken": "/refresh"
+      }
+    },
+    "userService": {
+      "baseUrl": "https://api.example.com/users",
+      "endpoints": {
+        "getUser": "/get",
+        "updateUser": "/update",
+        "listUsers": "/list"
+      }
+    },
+    "orderService": {
+      "baseUrl": "https://orders.example.com",
+      "endpoints": {
+        "createOrder": "/create",
+        "cancelOrder": "/cancel",
+        "trackOrder": "/track"
+      }
+    },
+    "notificationService": {
+      "baseUrl": "https://notify.example.com",
+      "endpoints": {
+        "sendEmail": "/email",
+        "sendSMS": "/sms",
+        "pushNotification": "/push"
+      }
+    }
+  },
+  "version": "1.0.0",
+  "environment": "development"
+}
